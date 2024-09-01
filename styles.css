@@ -1,10 +1,13 @@
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .main-container {
     width: 90%;
     margin: 0 auto;
+    padding: 20px;
 }
 
 .bg-container {
@@ -14,18 +17,22 @@ body {
     justify-content: center;
     margin-top: 50px;
     text-align: center;
+    flex-wrap: wrap; /* Ensure content wraps on smaller screens */
 }
 
 .img1 {
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    margin-bottom: 20px;
 }
 
 .description-container {
     display: flex;
     flex-direction: column;
     margin-left: 30px;
+    align-items: center;
+    text-align: center;
 }
 
 .head1 {
@@ -45,6 +52,7 @@ body {
     align-items: center;
     margin: 80px 0;
     width: 100%;
+    flex-wrap: wrap; /* Wrap items on small screens */
 }
 
 .timeline-item {
@@ -52,6 +60,7 @@ body {
     text-align: center;
     cursor: pointer;
     flex: 1;
+    margin: 10px 0; /* Add space between items for better readability */
 }
 
 .timeline-label {
@@ -139,6 +148,7 @@ body {
     .bg-container {
         flex-direction: column;
         text-align: center;
+        align-items: center;
     }
 
     .img1 {
@@ -147,14 +157,18 @@ body {
 
     .description-container {
         margin-left: 0;
+        text-align: center;
     }
 
     .timeline {
         flex-direction: column;
+        align-items: center;
     }
 
     .timeline-item {
         margin-bottom: 40px;
+        width: 100%; /* Ensure items take full width */
+        max-width: 500px; /* Limit maximum width for readability */
     }
 
     .timeline-item::before {
@@ -177,6 +191,7 @@ body {
 
     .timeline-label {
         top: -25px;
+        font-size: 13px;
     }
 
     .timeline-content {
